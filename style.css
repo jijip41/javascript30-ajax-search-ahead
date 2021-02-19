@@ -1,0 +1,42 @@
+:root {
+  --background-color: #ffd880;
+  --dark-color: #49599a;
+  --font-color: #6b011f;
+}
+
+::placeholder {
+  color: var(--font-color);
+}
+body {
+  background-color: var(--background-color);
+  position: relative;
+  color: var(--font-color);
+}
+
+.search-form {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.type-box {
+  width: 90%;
+  height: 40px;
+  align-self: center;
+  text-align: center;
+  font-size: 20px;
+  box-shadow: inset -1px 0 2px 2px var(--dark-color);
+}
+
+ul {
+  padding-left: 10%;
+}
+
+li {
+  display: block;
+  width: 100%;
+}
